@@ -29,7 +29,7 @@ export const Home_Login = () => {
                 style={[styles.buttonPress, {backgroundColor: 'rgba(197, 197, 197, 0.5)',}]}
                 onPress={() => router.navigate('/loginRegister/register')}
                 >
-                    <Text style={styles.textButton}>Register</Text>
+                    <Text style={styles.textButton}>Cadastrar-se</Text>
                 </TouchableOpacity>
 
                 <Image
@@ -37,7 +37,7 @@ export const Home_Login = () => {
                     style={styles.googleIcon}
                 />
 
-                <View>
+                <View style={styles.footer}>
                     <Text style={styles.textCopyright}>PATRE | ©</Text>
                     <Text style={styles.textCopyright}>DESENVOLVIDO POR ESTUDANTES | UNIFECAF</Text>
                 </View>

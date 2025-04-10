@@ -5,6 +5,8 @@ export const styles = StyleSheet.create({
 
     contain: {
         flex: 1,
+        marginTop: 10,
+        marginBottom: 10,
         justifyContent: 'center',
         alignItems: 'center',
         gap: 20
@@ -13,6 +15,7 @@ export const styles = StyleSheet.create({
     textTitle: {
         fontSize: 50,
         fontWeight: 500,
+        textAlign: 'center',
     },
 
     containerInput: {
@@ -47,13 +50,15 @@ export const styles = StyleSheet.create({
         borderRadius: 15,
     },
 
-
-
     textCopyright: {
         textAlign: 'center',
         fontSize: 15,
         fontWeight: '500',
         opacity: 0.8,
     },
+
+    footer: {
+        top: 60
+    }
 
 });

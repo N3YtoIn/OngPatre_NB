@@ -7,9 +7,9 @@ import { TextInput } from 'react-native-gesture-handler';
 export const Register = () => {
     return (
         <View style={styles.contain}>
-            <Text style={styles.textTitle}>Cadastre-se</Text>
+            <Text style={[styles.textTitle,{bottom: 10}]}>Cadastre-se</Text>
 
-            <View style={styles.containerInput}>
+            <View style={[styles.containerInput, {bottom: 15}]}>
                 <Text style={styles.TextTitleInput}>Nome</Text>
                 <TextInput
                     placeholder='Seu nome...'
@@ -20,7 +20,7 @@ export const Register = () => {
                 />
             </View>
 
-            <View style={styles.containerInput}>
+            <View style={[styles.containerInput, {bottom: 15}]}>
                 <Text style={styles.TextTitleInput}>Telefone</Text>
                 <TextInput
                     placeholder='Digite seu telefone...'
@@ -31,8 +31,8 @@ export const Register = () => {
                 />
             </View>
 
-            <View style={styles.containerInput}>
-                <Text style={styles.TextTitleInput}>E-mail</Text>
+            <View style={[styles.containerInput, {bottom: 15}]}>
+                <Text style={[styles.TextTitleInput]}>E-mail</Text>
                 <TextInput
                     placeholder='Digite seu e-mail...'
                     placeholderTextColor='#595959'
@@ -42,7 +42,7 @@ export const Register = () => {
                 />
             </View>
 
-            <View style={styles.containerInput}>
+            <View style={[styles.containerInput, {bottom: 15}]}>
                 <Text style={styles.TextTitleInput}>Senha</Text>
                 <TextInput
                     placeholder='Digite uma senha...'
@@ -53,12 +53,12 @@ export const Register = () => {
                 />
             </View>
 
-            <TouchableOpacity style={styles.ButtonBox}>
+            <TouchableOpacity style={[styles.ButtonBox,{bottom:10}]}>
                 <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Registrar</Text>
             </TouchableOpacity>
 
 
-            <View>
+            <View style={{bottom: 8}}>
                 <Text style={styles.textCopyright}>PATRE | ©</Text>
                 <Text style={styles.textCopyright}>DESENVOLVIDO POR ESTUDANTES | UNIFECAF</Text>
             </View>

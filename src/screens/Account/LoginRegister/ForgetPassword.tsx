@@ -7,9 +7,9 @@ import { TextInput } from 'react-native-gesture-handler';
 export const ForgetPassword = () => {
     return (
         <View style={styles.contain}>
-            <Text style={styles.textTitle}>Cadastre-se</Text>
+            <Text style={[styles.textTitle,{bottom: 80}]}>Recuperar Senha</Text>
 
-            <View style={styles.containerInput}>
+            <View style={[styles.containerInput,{bottom: 20}]}>
                 <Text style={styles.TextTitleInput}>E-mail</Text>
                 <TextInput
                     placeholder='Digite E-mail Cadastrado...'
@@ -20,12 +20,12 @@ export const ForgetPassword = () => {
                 />
             </View>
 
-            <TouchableOpacity style={styles.ButtonBox}>
+            <TouchableOpacity style={[styles.ButtonBox, {top: 10}]}>
                 <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Enviar</Text>
             </TouchableOpacity>
 
 
-            <View>
+            <View style={[styles.footer,{paddingTop: 60}]}>
                 <Text style={styles.textCopyright}>PATRE | ©</Text>
                 <Text style={styles.textCopyright}>DESENVOLVIDO POR ESTUDANTES | UNIFECAF</Text>
             </View>

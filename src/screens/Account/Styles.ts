@@ -48,4 +48,9 @@ export const styles = StyleSheet.create({
         fontWeight: '500',
         opacity: 0.8,
     },
+
+    footer: {
+        top: 23
+    }
+
 });
