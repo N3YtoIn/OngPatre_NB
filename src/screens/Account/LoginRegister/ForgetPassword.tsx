@@ -20,7 +20,10 @@ export const ForgetPassword = () => {
                 />
             </View>
 
-            <TouchableOpacity style={[styles.ButtonBox, {top: 10}]}>
+            <TouchableOpacity 
+            style={[styles.ButtonBox, {top: 10}]}
+            onPress={() => router.navigate('/loginRegister/confirmCode')}
+            >
                 <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Enviar</Text>
             </TouchableOpacity>
 

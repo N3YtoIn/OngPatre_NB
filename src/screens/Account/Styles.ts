@@ -51,6 +51,10 @@ export const styles = StyleSheet.create({
 
     footer: {
         top: 23
-    }
+    },
 
+    codeBox: {
+      height: 50,
+      width: '50%'  
+    },
 });

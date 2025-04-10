@@ -15,6 +15,7 @@ export const Register = () => {
                     placeholder='Seu nome...'
                     placeholderTextColor='#595959'
                     inputMode='text'
+                    maxLength={50}
 
                     style={styles.InputBox}
                 />
@@ -26,6 +27,8 @@ export const Register = () => {
                     placeholder='Digite seu telefone...'
                     placeholderTextColor='#595959'
                     inputMode='tel'
+                    maxLength={11}
+                    keyboardType='numeric'
 
                     style={styles.InputBox}
                 />
