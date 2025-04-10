@@ -4,15 +4,15 @@ import { router } from "expo-router"
 import { Text, TouchableOpacity, View, } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 
-export const Login = () => {
+export const ForgetPassword = () => {
     return (
         <View style={styles.contain}>
-            <Text style={styles.textTitle}>Faça Login</Text>
+            <Text style={styles.textTitle}>Cadastre-se</Text>
 
             <View style={styles.containerInput}>
                 <Text style={styles.TextTitleInput}>E-mail</Text>
                 <TextInput
-                    placeholder='Digite seu e-mail...'
+                    placeholder='Digite E-mail Cadastrado...'
                     placeholderTextColor='#595959'
                     inputMode='email'
 
@@ -20,25 +20,10 @@ export const Login = () => {
                 />
             </View>
 
-            <View style={styles.containerInput}>
-                <Text style={styles.TextTitleInput}>Senha</Text>
-                <TextInput
-                    placeholder='Digite sua senha...'
-                    placeholderTextColor='#595959'
-                    secureTextEntry
-
-                    style={styles.InputBox}
-                />
-            </View>
-
             <TouchableOpacity style={styles.ButtonBox}>
-                <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Entrar</Text>
+                <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Enviar</Text>
             </TouchableOpacity>
 
-            <Text 
-            style={styles.ForgetPassword}
-            onPress={() => router.navigate('/loginRegister/forgetPassword')}
-            >esqueceu a senha?</Text>
 
             <View>
                 <Text style={styles.textCopyright}>PATRE | ©</Text>
