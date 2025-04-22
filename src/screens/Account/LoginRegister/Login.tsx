@@ -32,7 +32,7 @@ export const Login = () => {
             </View>
 
             <TouchableOpacity style={styles.ButtonBox}>
-                <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Entrar</Text>
+                <Text style={styles.textButton}>Entrar</Text>
             </TouchableOpacity>
 
             <Text 

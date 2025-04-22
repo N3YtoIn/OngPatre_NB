@@ -57,7 +57,7 @@ export const Register = () => {
             </View>
 
             <TouchableOpacity style={[styles.ButtonBox,{bottom:10}]}>
-                <Text style={[styles.TextTitleInput, {paddingLeft: 0, fontWeight: '500', color:'#262626'}]}>Registrar</Text>
+                <Text style={styles.textButton}>Registrar</Text>
             </TouchableOpacity>
 
 

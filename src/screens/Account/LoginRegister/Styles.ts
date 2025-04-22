@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
 
 export const styles = StyleSheet.create({
 
@@ -24,8 +23,9 @@ export const styles = StyleSheet.create({
 
     TextTitleInput: {
         fontSize: 17,
-        paddingBottom: 1,
-        paddingLeft: 10
+        paddingLeft: 7, 
+        paddingBottom: 2,
+        fontWeight: 500
     },
 
     InputBox: {
@@ -49,6 +49,12 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 15,
     },
+    textButton:{
+        fontSize: 17,
+        color: "#262626",
+        fontWeight: 500,
+        textAlign: "center"
+    },
 
     textCopyright: {
         textAlign: 'center',
@@ -62,8 +68,11 @@ export const styles = StyleSheet.create({
     },
     
     codeBox: {
+        flexDirection: "row",
         height: 50,
-        width: '50%'  
+        width: '100%',
+        justifyContent: "center",
+        gap: 10
     },
 
     input: {
