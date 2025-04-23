@@ -57,7 +57,10 @@ export const Register = () => {
             </View>
 
             <TouchableOpacity style={[styles.ButtonBox,{bottom:10}]}>
-                <Text style={styles.textButton}>Registrar</Text>
+                <Text 
+                style={styles.textButton}
+                onPress={() => router.navigate('/home/home')}
+                >Registrar</Text>
             </TouchableOpacity>
 
 

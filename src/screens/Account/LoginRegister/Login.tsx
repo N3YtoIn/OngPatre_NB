@@ -32,7 +32,10 @@ export const Login = () => {
             </View>
 
             <TouchableOpacity style={styles.ButtonBox}>
-                <Text style={styles.textButton}>Entrar</Text>
+                <Text 
+                style={styles.textButton}
+                onPress={() => router.navigate('/home/home')}
+                >Entrar</Text>
             </TouchableOpacity>
 
             <Text 
