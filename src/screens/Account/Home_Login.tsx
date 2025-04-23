@@ -14,7 +14,7 @@ export const Home_Login = () => {
         >
             <View style={styles.contain}>
                 <Image
-                    source={require('@/assets/images/pngs/logo.png')}
+                    source={require('@/assets/images/pngs/patreLogo.png')}
                     style={styles.logo}
                 />
 
