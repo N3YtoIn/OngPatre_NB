@@ -1,4 +1,4 @@
-import { Image, TouchableOpacity, View } from "react-native"
+import { Image, Text, TouchableOpacity, View } from "react-native"
 import { styles } from "./Styles"
 import { router } from "expo-router"
 
@@ -26,11 +26,12 @@ export const Home = () => {
                 </View>
             </View>
 
-
-
-
-
-
+            <View style={styles.textContent}>
+                <Text style={styles.textStyle}>Bem-Vindo ao APP da</Text>
+                <Text style={[styles.textStyle,{fontWeight: 'bold'}]}>PATRE - Proteção Animal de Taboão e Região</Text>
+                <Text style={styles.textStyle}>com apoio dos alunos da instituição</Text>
+                <Text style={[styles.textStyle,{fontWeight: 'bold'}]}>UNIFECAF</Text>
+            </View>
 
             <View style={styles.navContent}>
                 <TouchableOpacity onPress={() => router.navigate('/news/news')}>
