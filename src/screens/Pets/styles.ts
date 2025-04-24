@@ -37,7 +37,18 @@ export const styles = StyleSheet.create({
         right: 0,
     },
 
+    contentPet: {
+        width: '100%',
+        height: '75%',
+        backgroundColor: '#d2d2d2'
+    
+    },
 
+    buttonArrow: {
+        height: 200,
+        width: 200,
+        backgroundColor: 'Red'
+    },
 
 
     navContent:{

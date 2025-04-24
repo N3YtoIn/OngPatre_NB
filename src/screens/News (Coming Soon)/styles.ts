@@ -37,7 +37,18 @@ export const styles = StyleSheet.create({
         right: 0,
     },
 
+    textContent: {
+        height: '75%',
+        width: '90%',
+        justifyContent: "center",
+        alignItems:"center",
+    },
 
+    textStyle: {
+        fontSize: 60,
+        textAlign: "center",
+        fontWeight: "bold"
+    },
 
 
     navContent:{

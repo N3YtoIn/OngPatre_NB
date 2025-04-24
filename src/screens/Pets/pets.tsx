@@ -1,4 +1,4 @@
-import { Image, TouchableOpacity, View } from "react-native"
+import { Image, TouchableOpacity, View, Text} from "react-native"
 import { styles } from "./styles"
 import { router } from "expo-router"
 
@@ -27,9 +27,15 @@ export const Pets = () => {
             </View>
 
 
+            <View style={styles.contentPet}>
+                <TouchableOpacity style={styles.buttonArrow}>
+                    <Image
+                        style={{height: 20, width: 20, transform: [{rotate: '180deg'}]}}
+                        source={require('@/assets/images/pngs/arrow.png')}
+                    />
+                </TouchableOpacity>
 
-
-
+            </View>
 
 
             <View style={styles.navContent}>

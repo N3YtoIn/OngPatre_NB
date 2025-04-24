@@ -1,4 +1,4 @@
-import { Image, TouchableOpacity, View } from "react-native"
+import { Image, Text, TouchableOpacity, View } from "react-native"
 import { styles } from "./styles"
 import { router } from "expo-router"
 
@@ -27,9 +27,9 @@ export const News = () => {
             </View>
 
 
-
-
-
+            <View style={styles.textContent}>
+                <Text style={styles.textStyle}>Coming Soon</Text>
+            </View>
 
 
             <View style={styles.navContent}>
