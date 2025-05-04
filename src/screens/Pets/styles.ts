@@ -40,16 +40,37 @@ export const styles = StyleSheet.create({
     contentPet: {
         width: '100%',
         height: '75%',
-        backgroundColor: '#d2d2d2'
+        backgroundColor: '#d2d2d2',
+        alignItems: "center",
+        flexDirection: "column"
+    },
+
+    buttonsPass: {
+        position: "static",
+        width: '100%',
+        height: '50%',
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "flex-end",
+        gap: '60%'
+    },
     
+    buttonsActions: {
+        width: '100%',
+        height: '50%',
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "10%"
     },
 
     buttonArrow: {
-        height: 200,
-        width: 200,
-        backgroundColor: 'Red'
+        height: 40,
+        width: 40,
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 20,
     },
-
 
     navContent:{
         position: "fixed",

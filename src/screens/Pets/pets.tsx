@@ -1,6 +1,9 @@
-import { Image, TouchableOpacity, View, Text} from "react-native"
+import { Image, TouchableOpacity, View, Text, ImageBackground} from "react-native"
 import { styles } from "./styles"
 import { router } from "expo-router"
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import AntDesign from '@expo/vector-icons/AntDesign';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 
 export const Pets = () => {
@@ -26,15 +29,30 @@ export const Pets = () => {
                 </View>
             </View>
 
-
             <View style={styles.contentPet}>
-                <TouchableOpacity style={styles.buttonArrow}>
-                    <Image
-                        style={{height: 20, width: 20, transform: [{rotate: '180deg'}]}}
-                        source={require('@/assets/images/pngs/arrow.png')}
-                    />
-                </TouchableOpacity>
+                <ImageBackground
+                />
+                <View style={styles.buttonsPass}>
+                    <TouchableOpacity style={[styles.buttonArrow, {backgroundColor: "#2A2A2A"}]}>
+                        <FontAwesome name="arrow-left" size={22} color="white" />
+                    </TouchableOpacity>
 
+
+                    <TouchableOpacity style={[styles.buttonArrow, {backgroundColor: "#2A2A2A"}]}>
+                        <FontAwesome name="arrow-right" size={22} color="white" />
+                    </TouchableOpacity>
+                </View>
+
+                <View style={styles.buttonsActions}>
+                    <TouchableOpacity style={[styles.buttonArrow, {backgroundColor: "#F52323"}]}>
+                        <AntDesign name="hearto" size={22} color="white" />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={[styles.buttonArrow, {backgroundColor: "#008638"}]}>
+                        <FontAwesome6 name="info" size={24} color="white" />
+                    </TouchableOpacity>
+                </View>
+                
             </View>
 
 
