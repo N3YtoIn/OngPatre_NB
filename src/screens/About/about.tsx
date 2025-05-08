@@ -1,5 +1,5 @@
 import { Image, TouchableOpacity, View } from "react-native"
-import { styles } from "./Styles"
+import { styles } from "./styles"
 import { router } from "expo-router"
 
 
