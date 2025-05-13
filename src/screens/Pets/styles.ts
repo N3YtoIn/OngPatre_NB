@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
         borderBottomWidth: 1,
         justifyContent: "center",
         alignItems: "center",
-        top: 0
+        top: 0,
     },
 
     headerLogo: {
@@ -40,11 +40,13 @@ export const styles = StyleSheet.create({
     contentPet: {
         width: '100%',
         height: '75%',
-        backgroundColor: '#d2d2d2',
         alignItems: "center",
         flexDirection: "column"
     },
-
+    imageBack: {
+        height: '100%',
+        width: '100%',
+    },
     buttonsPass: {
         position: "static",
         width: '100%',

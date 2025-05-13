@@ -35,9 +35,6 @@ export const styles = StyleSheet.create({
         right: 0,
     },
 
-
-
-
     navContent:{
         position: "fixed",
         bottom: 0,
